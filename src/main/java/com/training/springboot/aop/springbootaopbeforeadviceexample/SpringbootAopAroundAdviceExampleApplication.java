@@ -7,10 +7,10 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @SpringBootApplication
 @EnableAspectJAutoProxy(proxyTargetClass = true)
-public class SpringbootAopAfterAdviceExampleApplication {
+public class SpringbootAopAroundAdviceExampleApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = SpringApplication.run(SpringbootAopAfterAdviceExampleApplication.class, args);
+        ConfigurableApplicationContext context = SpringApplication.run(SpringbootAopAroundAdviceExampleApplication.class, args);
 // Fetching the employee object from the application context.
         com.training.springboot.aop.springbootaopbeforeadviceexample.service.BankService bank = context.getBean(com.training.springboot.aop.springbootaopbeforeadviceexample.service.BankService.class);
 // Displaying balance in the account
